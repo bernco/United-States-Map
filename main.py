@@ -13,7 +13,8 @@ state_turtle = Turtle()
 state_turtle.hideturtle()
 state_turtle.pu()
 
-while question.score <= 50:
+# continues asking for user input until all states have been gotten
+while question.score <= question.total_states:
     answered_question = question.ask_question()
     if question.check_answer(answered_question):
         question.add_score()
